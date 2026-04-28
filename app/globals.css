@@ -1,0 +1,315 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------- */
+/* telev8 design tokens — see DESIGN.md for source of truth         */
+/* ---------------------------------------------------------------- */
+
+@theme {
+  /* fonts */
+  --font-display: "General Sans", "Inter", system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo,
+    Consolas, monospace;
+
+  /* canvas — deep navy, the page */
+  --color-bg-canvas: #08101f;
+  --color-bg-surface: #0e1b3a;
+  --color-bg-elevated: #152647;
+  --color-bg-hover: #1f325a;
+
+  /* text */
+  --color-text-primary: #f5f7fa;
+  --color-text-secondary: #c7cdd8;
+  --color-text-muted: #6e7787;
+  --color-text-disabled: #4d5664;
+
+  /* CTA — white pill on dark canvas */
+  --color-cta-bg: #f5f7fa;
+  --color-cta-bg-hover: #ffffff;
+  --color-cta-text: #08101f;
+
+  /* accent — dusty blue (replaces orange in v1) */
+  --color-accent-300: #94a8c5;
+  --color-accent-400: #7a93b5;
+  --color-accent-500: #5c7a9a;
+
+  /* semantic */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #5ea8ff;
+
+  /* breakpoints */
+  --breakpoint-3xl: 1920px;
+
+  /* easing */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in-out-quad: cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+/* ---------------------------------------------------------------- */
+/* Custom CSS variables (not Tailwind-tokenized)                    */
+/* ---------------------------------------------------------------- */
+
+:root {
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-default: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --border-accent: rgba(122, 147, 181, 0.4);
+  --accent-glow: rgba(122, 147, 181, 0.2);
+}
+
+/* ---------------------------------------------------------------- */
+/* Base                                                              */
+/* ---------------------------------------------------------------- */
+
+html {
+  background: var(--color-bg-canvas);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  background: var(--color-bg-canvas);
+  color: var(--color-text-primary);
+  min-height: 100dvh;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-400);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-accent-400);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--color-accent-400);
+  color: var(--color-bg-canvas);
+}
+
+/* mono numbers and proof points */
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum", "ss02";
+  letter-spacing: 0.02em;
+}
+
+/* eyebrow label */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent-300);
+}
+
+/* display / heading helpers — clamp() for fluid scaling */
+.display-1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  font-size: clamp(3rem, 4vw + 1.5rem, 6.5rem);
+}
+.display-2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  font-size: clamp(2.25rem, 3vw + 1rem, 5rem);
+}
+.h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  font-size: clamp(2rem, 1.5vw + 1.25rem, 3.5rem);
+}
+.h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-size: clamp(1.75rem, 1vw + 1rem, 2.75rem);
+}
+.h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  font-size: clamp(1.375rem, 0.5vw + 1rem, 1.875rem);
+}
+
+/* respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* Hero backdrop — ambient mesh behind Hero + TrustBar              */
+/* ---------------------------------------------------------------- */
+
+.hero-mesh-a {
+  background: radial-gradient(
+    circle at 22% 28%,
+    rgba(122, 147, 181, 0.32) 0%,
+    transparent 42%
+  );
+  will-change: transform, opacity;
+}
+
+.hero-mesh-b {
+  background: radial-gradient(
+    circle at 78% 64%,
+    rgba(94, 168, 255, 0.18) 0%,
+    transparent 50%
+  );
+  will-change: transform, opacity;
+}
+
+.hero-mesh-c {
+  background: radial-gradient(
+    circle at 50% 110%,
+    rgba(122, 147, 181, 0.22) 0%,
+    transparent 55%
+  );
+  will-change: transform, opacity;
+}
+
+.hero-dotgrid {
+  mask-image: radial-gradient(
+    ellipse at 50% 30%,
+    black 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    transparent 80%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse at 50% 30%,
+    black 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    transparent 80%
+  );
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-mesh-a {
+    animation: hero-mesh-a-drift 22s ease-in-out infinite alternate;
+  }
+  .hero-mesh-b {
+    animation: hero-mesh-b-drift 26s ease-in-out infinite alternate;
+  }
+  .hero-mesh-c {
+    animation: hero-mesh-c-drift 30s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes hero-mesh-a-drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate3d(4%, -3%, 0) scale(1.08);
+    opacity: 1;
+  }
+}
+@keyframes hero-mesh-b-drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate3d(-3%, 2%, 0) scale(1.05);
+    opacity: 1;
+  }
+}
+@keyframes hero-mesh-c-drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate3d(2%, -2%, 0) scale(1.1);
+    opacity: 0.95;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* Trust bar marquee                                                */
+/* ---------------------------------------------------------------- */
+
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .marquee-track {
+    animation: marquee 38s linear infinite;
+    will-change: transform;
+  }
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* container helpers */
+.container-tight {
+  width: 100%;
+  max-width: 48rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 3rem);
+}
+.container-standard {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 3rem);
+}
+.container-wide {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 3rem);
+}
