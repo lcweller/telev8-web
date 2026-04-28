@@ -7,13 +7,16 @@ FROM node:24-slim AS builder
 WORKDIR /app
 
 ENV NEXT_TELEMETRY_DISABLED=1
-ENV NODE_ENV=production
+# IMPORTANT: do NOT set NODE_ENV=production here — npm would skip
+# devDependencies, and `next build` needs every build-time tool (Tailwind v4,
+# @tailwindcss/postcss, typescript, etc.) which all live in devDependencies.
+# `next build` sets NODE_ENV=production internally during the build phase.
 
 # Install deps with a deterministic, cached layer.
-# --include=optional ensures platform-specific native binaries (lightningcss,
-# tailwind oxide) get installed for the build platform.
+# --include=dev (explicit, in case NODE_ENV ever leaks into the env)
+# --include=optional pulls platform-specific native binaries (lightningcss).
 COPY package.json package-lock.json ./
-RUN npm ci --no-audit --no-fund --include=optional
+RUN npm ci --no-audit --no-fund --include=dev --include=optional
 
 # Copy only the directories Next.js needs to build
 COPY app ./app
