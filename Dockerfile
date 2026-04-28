@@ -1,15 +1,19 @@
 # syntax=docker/dockerfile:1.7
 
 # ---------- Stage 1: build the static export ----------
-FROM node:24-alpine AS builder
+# node:24-slim (Debian/glibc) instead of alpine — Tailwind v4's lightningcss
+# native binary doesn't reliably install on alpine's musl libc.
+FROM node:24-slim AS builder
 WORKDIR /app
 
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
 
-# Install deps with a deterministic, cached layer
+# Install deps with a deterministic, cached layer.
+# --include=optional ensures platform-specific native binaries (lightningcss,
+# tailwind oxide) get installed for the build platform.
 COPY package.json package-lock.json ./
-RUN npm ci --no-audit --no-fund
+RUN npm ci --no-audit --no-fund --include=optional
 
 # Copy only the directories Next.js needs to build
 COPY app ./app
