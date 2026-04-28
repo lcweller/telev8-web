@@ -25,16 +25,9 @@
 Internal container port is fixed at 80. Change the WebUI Port variable below to map any free host port to it.</Description>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8080</HostPort>
-        <ContainerPort>80</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
   </Networking>
   <Data/>
   <Environment/>
   <Labels/>
-  <Config Name="WebUI Port" Target="80" Default="8080" Mode="tcp" Description="Host port mapped to nginx (port 80 inside the container). Change this if 8080 is taken on your Unraid host. Then point your Cloudflare Tunnel ingress to http://[unraid-ip]:[this-port]." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="WebUI Port" Target="80" Default="8080" Mode="tcp" Description="Host port mapped to nginx (which listens on port 80 inside the container). Change the host port here if 8080 is taken on your Unraid host. Then point your Cloudflare Tunnel ingress to http://[unraid-ip]:[this-port]." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
 </Container>
