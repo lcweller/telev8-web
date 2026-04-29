@@ -8,8 +8,8 @@ import { cn } from "@/lib/cn";
 
 const LINKS = [
   { href: "#platform", label: "Platform" },
-  { href: "#plan", label: "For Property Owners" },
-  { href: "#stakes", label: "The Plan" },
+  { href: "#plan", label: "The Plan" },
+  { href: "#stakes", label: "What Doing Nothing Costs" },
   { href: "/team", label: "Team" },
 ];
 

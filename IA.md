@@ -145,7 +145,7 @@ Total ~11 sections, single continuous scroll. Page is statically generated, sing
 - **Authority tiles (3, mono-font digits):**
   - `15+ YEARS` of platform development
   - `177+ PATENTS` licensed in
-  - `99.999%` uptime on a closed-loop CDN with `~600 POPs`
+  - `99.9%` uptime on a closed-loop CDN with `450+ POPs`
 
 **Visual notes.**
 - Authority digits in **Geist Mono 500**, large enough to read as data not decoration. Surrounding labels in Inter 500.
@@ -189,10 +189,10 @@ Then five blocks, in this order:
 - **Visual:** a stylized device-grid that fades platforms in and out at a slow cadence.
 
 ### Block 4 — Cloud-native delivery, built for scale
-- **H3:** *closed-loop. edge-cached. five-nines.*
-- **Body:** *end-to-end multi-tenant cloud system with central CMS. closed-loop private CDN with a 50 Gbps backbone reaching nearly 600 points of presence (255 in the U.S. alone). 99.999% uptime. HEVC/H.265 with native 4K. edge caching for WAN efficiency.*
-- **Proof line (mono):** `~600 POPs · 50 Gbps · 99.999% UPTIME · 4K HEVC`
-- **Visual:** a faint world-map outline with 600 small dots representing POPs. Static. Restrained.
+- **H3:** *closed-loop. edge-cached. enterprise-grade.*
+- **Body:** *end-to-end multi-tenant cloud system with central CMS. closed-loop private CDN with a 50 Gbps backbone reaching 450+ points of presence across the U.S. and globally. 99.9% uptime. HEVC/H.265 with native 4K. edge caching for WAN efficiency.*
+- **Proof line (mono):** `450+ POPs · 50 Gbps · 99.9% UPTIME · 4K HEVC`
+- **Visual:** a faint world-map outline with ~450 small dots representing POPs. Static. Restrained.
 
 ### Block 5 — Backed by a deep IP moat
 - **H3:** *exclusive partnerships. compounding ip.*
@@ -285,7 +285,7 @@ Then five blocks, in this order:
 | FROM | TO |
 | --- | --- |
 | Pro:Idiom-locked commercial TVs | the consumer TVs already in every room |
-| an on-prem headend you maintain | a closed-loop cloud platform with five-nines uptime |
+| an on-prem headend you maintain | a closed-loop cloud platform with enterprise-grade uptime |
 | a guide screen from 2005 | a modern app-based experience with casting, search, DVR, VOD |
 | a TV line item that only goes up | a TV line item that earns recurring ad revenue |
 | truck rolls and rewires | remote configuration and remote management |

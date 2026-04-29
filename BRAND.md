@@ -12,6 +12,26 @@ telev8 is a cloud-based TV-as-a-Service (TVaaS) platform purpose-built for comme
 
 ---
 
+## The Core Reframe
+
+The single most important strategic move in telev8's positioning is the structural reframe of in-room television:
+
+> Television is no longer a recurring expense. It is portfolio-wide digital real estate — an owned media network that generates revenue, deepens loyalty, and modernizes the guest experience.
+
+This is not a feature pitch. It is a conceptual unlock that changes how a property owner sees the asset they already own. Every other claim telev8 makes is in service of this reframe.
+
+### The cost-center-to-revenue-engine arc
+
+| Before telev8 | After telev8 |
+| --- | --- |
+| Recurring expense | Recurring revenue |
+| Cost center | Revenue engine |
+| Fragmented, distributor-controlled deployments | Centrally governed, owned media network |
+| Commodity utility | Strategic asset |
+| Operational burden | Brand differentiator |
+
+---
+
 ## 2. Primary audience
 
 **Property owners and operators who write the deployment check.**
@@ -43,6 +63,18 @@ The end-resident or end-guest is a beneficiary in the value chain, **not** a buy
 
 ---
 
+## Audience Tiers
+
+telev8 communications serve two audience tiers, and the work changes depending on which tier we're addressing.
+
+**Executive tier** (CFO, COO, Chief Brand Officer, hospitality C-suite, investors): primary audience for top-of-funnel marketing — website hero, investor materials, press releases, partnership decks. They care about portfolio strategy, scale economics, governance, monetization, and competitive moats. Voice register: bold, declarative, structurally argued, financially literate, outcome-led.
+
+**Operational tier** (general managers, IT directors, regional ops, property owners at the asset level): audience for lower-funnel materials — sales sheets, deployment guides, FAQs. They care about install complexity, ongoing support, day-to-day reliability. Voice register: practical, specific, plain-English, problem/solution framed.
+
+**Default rule:** when audience is unspecified, default to the executive tier. Operational materials should be requested explicitly. The brand wins by getting executive meetings; operational materials close the deals those meetings produce.
+
+---
+
 ## 3. Positioning statement
 
 > **telev8 turns the TV in every room of a commercial property into a modern, app-based, revenue-generating asset — without commercial TVs, without rewiring, and at a fraction of the cost of legacy cable and satellite.**
@@ -69,7 +101,7 @@ Full cable programming, streaming apps, casting, DVR, 72-hour catch-up TV, trick
 *Proof: telev8 Partner Overview slides 5–6; GRX Overview pp. 8–9, 15 (Rich Features: nDVR trick play, 72-hour catch-up, casting, search, VOD).*
 
 ### 4. Cloud-native delivery built for scale and uptime
-End-to-end multi-tenant closed-loop system with central CMS. Established global CDN with a 50 Gbps private network reaching nearly 600 points of presence (255 in the U.S. alone). 99.999% uptime. Edge caching for WAN efficiency. HEVC/H.265 with native 4K support.
+End-to-end multi-tenant closed-loop system with central CMS. Established global CDN with a 50 Gbps private network reaching 450+ points of presence across the U.S. and globally. 99.9% uptime. Edge caching for WAN efficiency. HEVC/H.265 with native 4K support.
 *Proof: GRX Overview p. 15 (Transport & Content); Partner Overview slide 7.*
 
 ### 5. Backed by 15+ years of development and a deep IP moat
@@ -89,8 +121,8 @@ Exclusive TiVo partnership for hospitality, healthcare, senior living, MDU, and 
 | First "hospitality-tier" Android TV enterprise license (with UEI) | GRX Overview pp. 10, 15; CLAUDE.md |
 | Exclusive TiVo partnership for OOH and commercial multi-tenant markets | GRX Overview pp. 5, 14, 15; Partner Overview slide 5 |
 | 15+ years of platform development; 177+ patents licensed | GRX Overview p. 14, 15 |
-| Closed-loop CDN, 50 Gbps private network, ~600 POPs (255 in U.S.) | GRX Overview p. 15 |
-| 99.999% uptime | GRX Overview p. 15 |
+| Closed-loop CDN, 50 Gbps private network, 450+ POPs | GRX Overview p. 15 (deck claims 600+ POPs / 255 U.S.; site walks back to 450+ as conservatively defensible per 2026-04-29 voice-update decision) |
+| 99.9% uptime | GRX Overview p. 15 (deck claims 99.999%; site walks back to 99.9% as conservatively defensible per 2026-04-29 voice-update decision) |
 | HEVC/H.265 with native 4K | GRX Overview p. 15 |
 | Server-side dynamic ad insertion (SSAI) — industry first for commercial multi-tenant | Partner Overview slide 6; GRX Overview p. 6 |
 | 75+ channels with full licensing for 100% ad insertion | GRX Overview p. 15 |
@@ -118,7 +150,7 @@ A property owner or operator running a hotel, apartment community, senior living
 - **Authority (three proof points):**
   1. Built in exclusive partnership with TiVo for out-of-home and commercial multi-tenant markets, on 15+ years of platform development and 177+ patents licensed.
   2. First "hospitality-tier" Android TV enterprise license (with Universal Electronics) — an industry first.
-  3. Closed-loop private CDN with ~600 points of presence and 99.999% uptime.
+  3. Closed-loop private CDN with 450+ points of presence and 99.9% uptime.
 
 ### Plan (3 steps — process plan)
 1. **Schedule a demo.** We walk you through the platform and audit your property's existing wiring, TVs, and PMS.
@@ -196,8 +228,47 @@ Anchored in `CLAUDE.md` and tested against the existing source materials.
 - **reimagined**, **reshaped**, **modernized** — used selectively so they retain weight.
 - **closed-loop**, **edge cache**, **app-based**, **cloud-native** — technical proof words used at the layer below the headline.
 - **property owners**, **operators**, **brands** — name the buyer, not the building.
-- Concrete numbers and proof points (177+ patents, 600+ POPs, 99.999% uptime, 75+ channels, 15+ years).
+- Concrete numbers and proof points (177+ patents, 450+ POPs, 99.9% uptime, 75+ channels, 15+ years).
 - Active voice. Short, declarative sentences punctuated by longer rhythmic ones.
+
+### Conceptual frames (executive register)
+
+- **digital real estate** — the in-room TV as a property the operator owns. Property-owner language.
+- **owned media network** — positions telev8 as marketing infrastructure, not a vendor. CMO language.
+- **revenue engine** — what telev8 turns the TV into.
+- **portfolio-wide** — the modifier of choice for scale claims (vs. weaker alternatives like "across all your properties" or "company-wide").
+- **at scale** — used to set up financial or operational projections.
+- **strategic asset** / **strategic partner** / **strategic placement** — qualifier for high-value items.
+- **critical mass** — used when the argument depends on adoption velocity.
+
+### Verbs of intentionality
+
+These signal that telev8 was deliberately built — not assembled, not pieced together. Always point to a specific design choice.
+
+- **purpose-built** / **purpose-designed**
+- **engineered for**
+- **architected to**
+- **designed to**
+- **built for**
+
+### Transformation language
+
+Used sparingly so the words retain weight.
+
+- **reimagines** — when reframing an existing concept.
+- **reframes** — when shifting categorization (e.g., from cost center to revenue engine).
+- **transforms** — earned when telev8 genuinely changes the structure of a property's economics.
+- **modernizes** — earned when replacing legacy infrastructure.
+- **unlocks** — earned when telev8 enables something previously impossible.
+
+### Pain-point phrases (the "before" picture)
+
+- **fragmented, distributor-controlled deployments**
+- **locked-down hardware**
+- **costly proprietary networks** that disrupt operations
+- **disruptive renovations** and network overhauls
+- **the truck rolls and license invoices**
+- **operational burden**
 
 ---
 
@@ -205,11 +276,10 @@ Anchored in `CLAUDE.md` and tested against the existing source materials.
 
 - **AI-powered.** telev8 is not an AI company.
 - **Revolutionary**, **disrupt**, **disruptor.** Don't claim what isn't earned.
-- **Next-generation.** Generic.
-- **Best-in-class**, **world-class.** Wallpaper.
-- **Synergy.** No.
+- **Next-generation.** Overused; describe what's actually new instead.
+- **Best-in-class**, **world-class**, **cutting-edge**, **state-of-the-art.** Wallpaper.
+- **Synergy**, **leverage**, **streamline.** Corporate filler.
 - **Seamless.** Over-deployed; use only when literal.
-- **Cutting-edge.** Cliché.
 - **Solutions.** As a vague catch-all. Use only when specifically the right word.
 - **Hedging:** "we believe," "we strive to," "we aim to," "we are committed to."
 - **Greenwashing or hand-waving** of any kind.

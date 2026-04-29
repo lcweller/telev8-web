@@ -123,7 +123,7 @@ Light mode shares brand orange and semantic tokens with dark.
 | --- | --- | --- | --- |
 | Display / headlines | **General Sans** | Fontshare (free) | Geometric sans with slight rounded terminals. Complements the existing rounded `telev8` wordmark without imitating it. More editorial character than Inter, less squared than Cabinet Grotesk — right for the atmospheric, near-monochrome canvas. |
 | Body / UI | **Inter** | Google Fonts (free) | Universal screen workhorse, tuned for small sizes, ships with `next/font`. |
-| Mono / data | **Geist Mono** | Vercel (free) | Clean, characterful mono for technical readouts, kbd, footnotes, the proof-point digits (177+ patents, 99.999%, 600+ POPs). |
+| Mono / data | **Geist Mono** | Vercel (free) | Clean, characterful mono for technical readouts, kbd, footnotes, the proof-point digits (177+ patents, 99.9%, 450+ POPs). |
 
 All three load via `next/font` (Inter, Geist Mono) and Fontshare CDN with `font-display: swap` (General Sans). All are free. All are subset to Latin-Extended for performance.
 
@@ -152,7 +152,7 @@ Line-heights: `display` 1.0; `h1`–`h2` 1.05–1.1; `h3`–`h4` 1.2; `body-lg` 
 - **lowercase telev8** wherever the wordmark appears, including headings.
 - Headlines hold one to two sentences max. No three-decker stacks.
 - Eyebrow labels in caps (`FOR PROPERTY OWNERS`, `THE PLATFORM`) — a small Linear/Stripe-tier touch that signals seriousness.
-- Mono font for any number that's a proof point: `99.999%`, `177+`, `600+`. Subtle but it makes the stats feel like data, not marketing.
+- Mono font for any number that's a proof point: `99.9%`, `177+`, `450+`. Subtle but it makes the stats feel like data, not marketing.
 
 ---
 

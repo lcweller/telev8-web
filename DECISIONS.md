@@ -23,6 +23,24 @@ Project docs you should read before this one:
 
 ---
 
+## Phase 1.5 — voice & copy refinements (locked 2026-04-29)
+
+Driven by integration of `docs/executive-voice-reference.md` and a Wyndham-tier credibility pressure-test of the v1 stat claims. Goal: pull the executive register through the top-of-funnel surface and harden numeric claims against SLA/CDN due diligence.
+
+| # | Decision | Rationale |
+| --- | --- | --- |
+| B8 | **Hero subhead rewritten** to lead with the structural reframe ("telev8 reframes in-room television from a recurring expense into a portfolio-wide revenue engine. One cloud platform — purpose-built for hospitality, multi-family, senior living, hospitals, and out-of-home..."). | Old subhead opened with platform self-description and buried the reframe 40 words in. New subhead invokes *reframes*, *portfolio-wide*, *revenue engine*, and *purpose-built* — all favored phrases from the executive-voice reference — in two beats. |
+| B9 | **Hero eyebrow promoted from list to scale claim:** `For Hotels · Multi-Family · Senior Living · Hospitals · Out-of-Home` → `Portfolio-Wide TV — Hospitality, Multi-Family, Senior Living, Hospitals, Out-of-Home`. | `CLAUDE.md` competitive-positioning doctrine #3: "A vertical pill is a list; the cross-vertical advantage should be *messaged*, not just enumerated." Eyebrow now leads with the cross-vertical claim. |
+| B10 | **TrustBar subhead** restructured so telev8 is the agent of the claim: `TiVo's exclusive partner for commercial multi-tenant markets.` → `Exclusive TiVo partner for commercial multi-tenant markets — backed by 15+ years of platform development.` | Adds the "backed by" authority pattern and inverts ownership of the claim — telev8 secured the rights, not the other way around. |
+| B11 | **ValueProps Card 01 body** opens with the value-exemplar line ("turns the screen in every guest room into the most valuable surface on your property") and the *without [the rewire]* pattern. | Card 01 is the architectural-advantage card. It now opens with the asset reframe instead of feature description. |
+| B12 | **ValueProps Card 03 body** prepended with: "Every TV becomes part of a portfolio-wide owned media network — addressable, governed centrally, and monetizable." | Card 03 is the cost→revenue reframe card. It now names the asset class — *owned media network* — that the rest of the body argues for. CMO language, not vendor language. |
+| B13 | **Stat reconciliation: uptime & POPs walked back to conservatively defensible figures** across all five surfaces (Guide ladder, Card 05 headline / body / proof line, BRAND.md §5/§6/§8, IA.md §5/§6, DESIGN.md §3 typography example). `99.999%` → `99.9%`. `~600 POPs (255 in U.S.)` → `450+ POPs across the U.S. and globally`. Card 05 headline `Five-Nines` → `Enterprise-Grade`. | Source GRX deck supports the larger numbers as written, but five-nines uptime invites SLA contract scrutiny that 99.9% does not, and 600+ POPs invites a CDN-route audit that 450+ survives. Credibility-hardening move ahead of executive due diligence — not a fact correction. The "255 in the U.S. alone" sub-figure was dropped; it's internally inconsistent with the new conservative topline. |
+| B14 | **Nav label-to-anchor bug fixed.** `{ href: "#plan", label: "For Property Owners" }` → `{ href: "#plan", label: "The Plan" }`. `{ href: "#stakes", label: "The Plan" }` → `{ href: "#stakes", label: "What Doing Nothing Costs" }`. | Pre-existing labeling bug — the labels were mis-mapped to their anchors. Now matches the section names users actually scroll to. |
+| B15 | **`CLAUDE.md` updated with sibling-AI awareness.** A new "Sibling AI" section codifies the lane split: this Claude Code project is the implementation specialist; a parallel Claude.ai web project is the brand-voice authority. Brand or copy work landing here should be redirected. | The user has set up a parallel Claude.ai web project to handle brand strategy, PR, marketing, executive communications, and sales enablement. Both AIs share the same source documents; they specialize differently. |
+| B16 | **`BRAND.md` extended** with a new "The Core Reframe" section (after §1) and a new "Audience Tiers" section (after §2). The favored-phrases (§8) and avoided-phrases (§9) lists were extended with the executive-register vocabulary. Existing §1–§12 numbering preserved (so the `DECISIONS.md` B5 reference to `BRAND.md §10` still resolves). | Codifies the structural reframe — TV from cost center to revenue engine, in-room television as digital real estate / owned media network — as the keystone strategic frame. Adds the executive vs. operational tier distinction with executive as the default register for top-of-funnel work. |
+
+---
+
 ## Phase 2–4 — design / engineering decisions
 
 ### D1. Stack: **Next.js 15 + TS strict + Tailwind v4 + Framer Motion + shadcn primitives + Lenis**
@@ -43,7 +61,7 @@ Project docs you should read before this one:
 
 **Alternatives considered.** Cabinet Grotesk (squarer, more clinical — initially proposed but adjusted after seeing the rounded `telev8` wordmark in `telev8_social.jpg`); Söhne (paid, considered too expensive for v1); Inter Display (insufficient character).
 
-**Rationale.** General Sans's slight rounded terminals complement the existing `telev8` wordmark without imitating it. Inter is the universal screen workhorse. Geist Mono's `tnum` and stylistic sets give the proof-point digits (`99.999%`, `177+`, `600+`) the look of data, not marketing.
+**Rationale.** General Sans's slight rounded terminals complement the existing `telev8` wordmark without imitating it. Inter is the universal screen workhorse. Geist Mono's `tnum` and stylistic sets give the proof-point digits (`99.9%`, `177+`, `450+`) the look of data, not marketing.
 
 **Notes.**
 - General Sans is loaded via Fontshare CDN. If you'd prefer self-hosted, download woff2 files for weights 500/600/700/800 and switch to `next/font/local`.

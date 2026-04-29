@@ -16,6 +16,7 @@ This repo is the **telev8 marketing site** — the public-facing flagship landin
 - **`DECISIONS.md`** — engineering and design decision log (B-series brand decisions, D-series engineering decisions)
 - **`README.md`** — setup, scripts, project structure, brand rules, performance and a11y targets, known v1 placeholders
 - **`docs/competitive-landscape.md`** — competitive intelligence: who telev8 is up against (SONIFI, Enseo, Allbridge, Hotwire, the cable incumbents, IPTV middleware, senior-living engagement platforms), where each is strong and weak, and the strategic implications for positioning. **Reference this before any decision about messaging, headlines, hero framing, or value-prop emphasis.**
+- **`docs/executive-voice-reference.md`** — canonical reference for telev8's voice at its sharpest, calibrated for executive audiences (CFO, COO, Chief Brand Officer, hospitality C-suite, investors). Reference whenever producing or refining brand messaging, headlines, value propositions, or any copy intended for top-of-funnel decision-makers.
 - **`docs/storybrand-framework.md`** — Donald Miller's SB7 messaging framework. Every public-facing message maps cleanly onto it.
 - **`docs/source-materials/`** — original decks, flyers, and market documents used for Phase 1 brand synthesis (Partner Overview, Interact pitch, MDU market doc, GRX Overview, Resident Journey, EIC meeting, Website Text). Authoritative source for any factual claim.
 
@@ -28,6 +29,19 @@ This repo is the **telev8 marketing site** — the public-facing flagship landin
 - **Surgical changes preferred over rewrites** — preserve everything not on the requested list, edit existing files rather than create new ones, do not refactor opportunistically.
 - **Respect `prefers-reduced-motion`** on every animation, new or modified.
 - **Maintain Lighthouse targets:** Performance ≥95, Accessibility 100, Best Practices 100, SEO 100. Never trade performance for animation.
+- **Lead with the structural reframe** — TV from cost center to revenue engine, in-room television as digital real estate / owned media network. This is the keystone strategic frame; all top-of-funnel copy should reinforce it.
+
+---
+
+## Sibling AI
+
+A parallel Claude.ai web project handles the user's non-code work — brand strategy, PR, marketing, advertising, executive communications, sales enablement, and investor materials. Both AIs share the same source documents, voice rules, and competitive intelligence.
+
+**My lane (Claude Code):** website code, design implementation, technical artifacts.
+
+**Web AI's lane:** everything non-code — copy, strategy, communications, materials.
+
+When the user produces brand copy in the web project and brings it here for implementation, treat it as authoritative — the web AI is the brand voice authority and I am the implementation specialist. When a request lands here that is genuinely a brand or copy task, redirect to the web project rather than producing the deliverable myself.
 
 ---
 

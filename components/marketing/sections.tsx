@@ -90,7 +90,7 @@ export function TrustBar() {
           className="text-sm text-[var(--color-accent-300)] text-center max-w-[60ch]"
           style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
         >
-          TiVo&apos;s exclusive partner for commercial multi-tenant markets.
+          Exclusive TiVo partner for commercial multi-tenant markets — backed by 15+ years of platform development.
         </p>
         <div
           className="relative w-full overflow-hidden marquee-mask mt-2"
@@ -198,10 +198,10 @@ const AUTHORITY: AuthorityRung[] = [
   },
   {
     kind: "stat",
-    value: 99.999,
-    decimals: 3,
+    value: 99.9,
+    decimals: 1,
     suffix: "%",
-    label: "Uptime across ~600 edge locations",
+    label: "Uptime across 450+ edge locations",
   },
 ];
 
@@ -294,7 +294,7 @@ const VALUE_PROPS = [
   {
     h: "No Commercial TVs. No Rewiring.",
     body:
-      "telev8 runs on the consumer televisions already in every room, over the copper, coax, or fiber wiring already in your walls. Auto-configuration to each TV is handled remotely.",
+      "telev8 turns the screen in every guest room into the most valuable surface on your property — without commercial TVs and without a rewire. Auto-configuration to each consumer television is handled remotely, over the copper, coax, or fiber already in your walls.",
     proof: "EXISTING WIRING · CONSUMER TVS · REMOTE CONFIG",
   },
   {
@@ -306,7 +306,7 @@ const VALUE_PROPS = [
   {
     h: "Stop Maintaining TV. Start Monetizing It.",
     body:
-      "Targeted, dynamic ads replace generic programmatic placements — an industry first for commercial multi-tenant venues. Higher per-view value for content partners. A new monthly revenue line for property brands.",
+      "Every TV becomes part of a portfolio-wide owned media network — addressable, governed centrally, and monetizable. Targeted dynamic advertising replaces generic programmatic placements, an industry first for commercial multi-tenant venues. Higher per-view value for content partners. A new monthly revenue line for property brands.",
     proof: "75+ CHANNELS · 100% TARGETED · ANONYMIZED DATA",
   },
   {
@@ -316,10 +316,10 @@ const VALUE_PROPS = [
     proof: "TIVO EXCLUSIVE · ANDROID TV · APPLE TV · FIRE TV · TIZEN · WEBOS",
   },
   {
-    h: "Closed-Loop. Edge-Cached. Five-Nines.",
+    h: "Closed-Loop. Edge-Cached. Enterprise-Grade.",
     body:
-      "End-to-end cloud platform with a central management system. A closed-loop private delivery network with a 50 Gbps backbone reaching nearly 600 edge locations (255 in the U.S. alone). 99.999% uptime. Native 4K. Edge caching for bandwidth efficiency.",
-    proof: "~600 EDGE LOCATIONS · 50 Gbps · 99.999% UPTIME · NATIVE 4K",
+      "End-to-end cloud platform with a central management system. A closed-loop private delivery network with a 50 Gbps backbone reaching 450+ edge locations across the U.S. and globally. 99.9% uptime. Native 4K. Edge caching for bandwidth efficiency.",
+    proof: "450+ EDGE LOCATIONS · 50 Gbps · 99.9% UPTIME · NATIVE 4K",
   },
   {
     h: "Exclusive Partnerships. Compounding IP.",

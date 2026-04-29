@@ -473,7 +473,7 @@ export function MonetizeTvViz() {
 }
 
 /* ---------------------------------------------------------------- */
-/* 5. Closed-Loop. Edge-Cached. Five-Nines.                         */
+/* 5. Closed-Loop. Edge-Cached. Enterprise-Grade.                    */
 /* ---------------------------------------------------------------- */
 
 const NETWORK_NODES: [number, number][] = [

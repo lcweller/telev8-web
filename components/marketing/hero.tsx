@@ -22,7 +22,7 @@ export function Hero() {
         <Reveal stagger className="lg:col-span-7 flex flex-col gap-7">
           <RevealChild>
             <Eyebrow>
-              For Hotels · Multi-Family · Senior Living · Hospitals · Out-of-Home
+              Portfolio-Wide TV — Hospitality, Multi-Family, Senior Living, Hospitals, Out-of-Home
             </Eyebrow>
           </RevealChild>
 
@@ -36,11 +36,11 @@ export function Hero() {
 
           <RevealChild>
             <p className="text-[1.125rem] sm:text-[1.25rem] leading-[1.55] text-[var(--color-text-secondary)] max-w-[40rem]">
-              telev8 is the only cloud-based TV platform that serves hospitality,
-              multi-family, senior living, hospitals, and out-of-home — running on
-              your property&apos;s existing wiring and the consumer televisions
-              already in every room, with dynamic ad insertion that turns TV from
-              a cost center into a recurring revenue line.
+              telev8 reframes in-room television from a recurring expense into a
+              portfolio-wide revenue engine. One cloud platform — purpose-built
+              for hospitality, multi-family, senior living, hospitals, and
+              out-of-home — running on the consumer TVs and existing wiring
+              already in every room.
             </p>
           </RevealChild>
 
