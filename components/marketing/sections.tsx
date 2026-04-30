@@ -133,7 +133,8 @@ export function Problem() {
         <Reveal stagger className="lg:col-span-6 flex flex-col gap-8 lg:pt-4">
           <RevealChild>
             <p className="text-[1.0625rem] leading-[1.65] text-[var(--color-text-secondary)]">
-              Pro:Idiom-locked TVs. On-prem headends. Truck rolls every time
+              Pro:Idiom-locked TVs. On-prem headends. A fragmented distribution
+              chain controlled by content distributors. Truck rolls every time
               something breaks. A guide screen that hasn&apos;t been redesigned
               since the iPhone shipped.
             </p>
@@ -441,7 +442,7 @@ export function Plan() {
 
       <Reveal>
         <p className="mt-10 text-sm text-[var(--color-text-muted)] text-center">
-          No commercial TVs required · No rewiring required · No personal data collected
+          No commercial TVs required · No proprietary networks required · No personal data collected
         </p>
       </Reveal>
     </Section>

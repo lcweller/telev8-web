@@ -159,7 +159,7 @@ A property owner or operator running a hotel, apartment community, senior living
 
 ### Plan (agreement plan — 3 promises)
 - No commercial TVs required.
-- No rewiring required.
+- No proprietary networks required.
 - No PII collected from your guests or residents.
 
 ### Direct CTA

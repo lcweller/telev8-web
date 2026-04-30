@@ -56,7 +56,7 @@ export function Hero() {
 
           <RevealChild>
             <p className="text-sm text-[var(--color-text-muted)] mt-1">
-              No commercial TVs · No rewiring · No personal data collected
+              No commercial TVs · No proprietary networks · No personal data collected
             </p>
           </RevealChild>
         </Reveal>
