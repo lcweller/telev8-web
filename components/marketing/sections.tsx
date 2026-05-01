@@ -705,9 +705,9 @@ export function Footer() {
             aria-label={col.title}
             className="flex flex-col gap-3"
           >
-            <h4 className="eyebrow text-[var(--color-text-muted)]">
+            <p className="eyebrow text-[var(--color-text-muted)]">
               {col.title}
-            </h4>
+            </p>
             <ul className="flex flex-col gap-2">
               {col.links.map((link) => (
                 <li key={link.label}>
@@ -733,7 +733,7 @@ export function Footer() {
           </p>
         </div>
         <div className="container-wide pb-8">
-          <p className="text-[0.6875rem] leading-relaxed text-[var(--color-text-disabled)] max-w-[80ch]">
+          <p className="text-[0.6875rem] leading-relaxed text-[var(--color-text-muted)] max-w-[80ch]">
             telev8™ is a trademark of telev8, LLC. TiVo® is a registered
             trademark of TiVo Corporation. Android TV™ is a trademark of
             Google LLC. Apple TV®, Amazon Fire TV™, Samsung Tizen®, and LG
